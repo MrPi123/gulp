@@ -1,0 +1,20 @@
+@import "color";
+@mixin button($width:95px,$height:35px){
+  display: block;
+  position: relative;
+  height: $height;
+  width: $width;
+  line-height: $height;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: background .3s;
+}
+.btn-submit{
+  @include button();
+  background-color: $color-accent;
+}
+.btn-submit:active{
+  background-color: $color-accent-active;
+}

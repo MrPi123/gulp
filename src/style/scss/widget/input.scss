@@ -1,0 +1,19 @@
+@import "color";
+
+/**
+普通状态
+ */
+input[type=text],
+input[type=password],
+input[type=email]{
+  border: 1px solid $color-border;
+  outline: none;
+}
+/**
+  获取焦点状态
+ */
+input[type=text],
+input[type=password],
+input[type=email]:focus{
+  border: 1px solid $color-border;
+}
